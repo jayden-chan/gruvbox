@@ -131,6 +131,8 @@ let s:gb.faded_purple   = ['#8f3f71', 96]      " 143-63-113
 let s:gb.faded_aqua     = ['#427b58', 66]      " 66-123-88
 let s:gb.faded_orange   = ['#af3a03', 130]     " 175-58-3
 
+let s:gb.alt_blue       = ['#4eade5', 33]
+
 " }}}
 " Setup Emphasis: {{{
 
@@ -454,6 +456,9 @@ call s:HL('GruvboxYellowSign', s:yellow, s:sign_column, s:invert_signs)
 call s:HL('GruvboxBlueSign', s:blue, s:sign_column, s:invert_signs)
 call s:HL('GruvboxPurpleSign', s:purple, s:sign_column, s:invert_signs)
 call s:HL('GruvboxAquaSign', s:aqua, s:sign_column, s:invert_signs)
+
+call s:HL('GruvboxAltBlue', s:gb.alt_blue)
+call s:HL('GruvboxAltBlueBold', s:gb.alt_blue, s:none, s:bold)
 
 " }}}
 
@@ -1373,6 +1378,16 @@ hi! link jsonKeyword GruvboxGreen
 hi! link jsonQuote GruvboxGreen
 hi! link jsonBraces GruvboxFg1
 hi! link jsonString GruvboxFg1
+
+" }}}
+" Rust: {{{
+
+hi! link rustMacro GruvboxAltBlue
+hi! link rustFuncParam GruvboxBlue
+hi! link rustModPath GruvboxAqua
+hi! link rustModPathCap GruvboxYellow
+hi! link rustFuncCall GruvboxGreenBold
+hi! link rustImplIdent GruvboxYellow
 
 " }}}
 
