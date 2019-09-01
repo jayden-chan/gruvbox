@@ -1383,11 +1383,8 @@ hi! link jsonString GruvboxFg1
 " Rust: {{{
 
 hi! link rustMacro GruvboxAltBlue
-hi! link rustFuncParam GruvboxBlue
 hi! link rustModPath GruvboxAqua
 hi! link rustModPathCap GruvboxYellow
-hi! link rustFuncCall GruvboxGreenBold
-hi! link rustImplIdent GruvboxYellow
 
 " }}}
 
